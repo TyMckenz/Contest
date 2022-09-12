@@ -1,0 +1,36 @@
+﻿@model Contestant
+@{
+    ViewData["Title"] = "Contest";
+}
+
+<div class="text-danger">
+<h1>Contest</h1>
+
+<form asp-action="SaveInfo">
+       <div>
+           <label for="FirstName">First Name</label>
+           <input asp-for="FirstName" />
+       </div>
+       <div>
+            <label for="LastName">Last Name</label>
+           <input asp-for="LastName" />
+       </div>
+       <div>
+            <label for="Address">Address</label>
+           <input asp-for="Address" />
+       </div>
+       <div>
+            <label for="PhoneNumber">Phone Number</label>
+           <input asp-for="PhoneNumber" />
+       </div>
+       <div>
+            <label for="Email">Email</label>
+           <input asp-for="Email" />
+       </div>
+       <div>
+           <label for="Essay">Small Essay On Why You Should Win</label>
+
+       </div>
+   <input type="submit" value="Save" />
+</form>
+</div>
